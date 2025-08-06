@@ -16,7 +16,7 @@ API RESTful para gerenciamento de produtos desenvolvida com Spring Boot.
 - Atualização
 - Exclusão
   
-## Como executar
+# Como executar
 
 ## Pré-requisitos:
 - Java 21 [(https://www.oracle.com/br/java/technologies/downloads/#java21)]
@@ -26,6 +26,7 @@ API RESTful para gerenciamento de produtos desenvolvida com Spring Boot.
 ## Passo a Passo
 
 Crie uma pasta com o nome "api-products-spring"
+
 Abra o cmd e digite os seguintes comandos
 
 ```
@@ -36,9 +37,11 @@ git clone https://github.com/CdBr4zil/api-products-spring.git
 Abra a pasta no IntelliJ e execute o "ProductsApiApplication"
 
 Ao executar, a URL do H2 Database será imprimida no console, abrindo o H2 Database insira as credenciais:
-- JDBC URL: jdbc:h2:mem:product
-- User Name: admin
-- Password: admin
+```
+JDBC URL: jdbc:h2:mem:product
+User Name: admin
+Password: admin
+```
 
 ## Endpoints
 
@@ -55,11 +58,13 @@ Para utilizar os endpoints, abra o Postman, coloque os metodos requisitados na t
 Exemplo:
 
 POST - http://localhost:8080/products
+```
 {
   "name":"Smartphone", 
   "description":"Android 128GB", 
   "price":1599.90
 }
+```
 
 ## Estrutura do projeto
 ```
